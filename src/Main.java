@@ -6,12 +6,11 @@ public class Main {
   public static void main(String[] args) {
     int n = Integer.parseInt(args[0]);
 
-    Triangle a = new Triangle();
+    HorizontalLine.draw(n);
+    System.out.print("\n");
+    VerticalLine.draw(n);
+    System.out.print("\n");
+    Triangle.draw(n);
 
-    Triangle.drawHorizontalLine(n);
-    System.out.println();
-    Triangle.drawVerticalLine(n);
-    System.out.println();
-    Triangle.drawTriangle(n);
   }
 }

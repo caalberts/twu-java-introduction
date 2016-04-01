@@ -11,6 +11,10 @@ public class Main {
     VerticalLine.draw(n);
     System.out.print("\n");
     Triangle.draw(n);
+    System.out.print("\n");
+    IsoscelesTriangle.draw(n);
+    System.out.print("\n");
+    Diamond.draw(n);
 
   }
 }

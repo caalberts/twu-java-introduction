@@ -4,7 +4,14 @@
 
 public class Main {
   public static void main(String[] args) {
+    int n = Integer.parseInt(args[0]);
+
     Triangle a = new Triangle();
-    Triangle.drawHorizontalLine(8);
+
+    Triangle.drawHorizontalLine(n);
+    System.out.println();
+    Triangle.drawVerticalLine(n);
+    System.out.println();
+    Triangle.drawTriangle(n);
   }
 }

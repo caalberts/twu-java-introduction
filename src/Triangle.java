@@ -20,8 +20,8 @@ public class Triangle {
   }
 
   public static void drawTriangle(int n) {
-    for (int i = 0; i < n; i++) {
-      drawHorizontalLine(n);
+    for (int i = 1; i <= n; i++) {
+      drawHorizontalLine(i);
     }
   }
 

@@ -6,24 +6,20 @@ import java.util.Arrays;
  */
 public class PrimeFactors {
   public static void generate (int n) {
-    int[] startList = {2};
+    int[] startList = {1};
     int[] primeFactors = findFactors(n, startList);
     int[] uniquePrimeFactors = getUniquePrimeFactors(primeFactors);
     System.out.println(Arrays.toString(uniquePrimeFactors));
   }
 
   private static int[] findFactors (int num, int[] factors) {
-    System.out.println(num + " " + Arrays.toString(factors));
-    for (int i = factors[factors.length - 1]; i <= num; i++) {
-      System.out.println(i);
-      if (num % i == 0) {
-        System.out.println("recurse");
-        int[] newFactors = addElement(factors, i);
-        int nextNumber = num / i;
-        return findFactors(nextNumber, newFactors);
-      }
+    if (num <= 1) return factors;
+    else {
+      int f;
+      for (f = (factors[factors.length - 1] > 1) ? factors[factors.length - 1] : 2; num % f > 0; f++) ;
+      int[] newFactors = addElement(factors, f);
+      return findFactors(num / f, newFactors);
     }
-    return factors;
   }
 
   private static int[] addElement (int[] array, int num) {

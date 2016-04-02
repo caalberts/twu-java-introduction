@@ -4,8 +4,10 @@
 
 public class Main {
   public static void main(String[] args) {
-    int n = Integer.parseInt(args[0]);
-    String name = args[1];
+
+    int n = Integer.parseInt(args[1]);
+    String name = args[2];
+
 
     HorizontalLine.draw(n);
     System.out.print("\n");
@@ -18,6 +20,8 @@ public class Main {
     Diamond.draw(n);
     System.out.print("\n");
     DiamondName.draw(n, name);
+    System.out.print("\n");
 
+    FizzBuzz.count();
   }
 }

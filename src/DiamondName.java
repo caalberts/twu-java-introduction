@@ -2,7 +2,7 @@
  * Created by albert on 1/4/16.
  */
 public class DiamondName {
-  public static draw (int n, String name) {
+  public static void draw (int n, String name) {
     for (int i = 1; i <= n; i++) {
       if (i % 2 == 1) {
         for (int j = 1; j <= (n - i) / 2; j++) {

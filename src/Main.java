@@ -5,6 +5,7 @@
 public class Main {
   public static void main(String[] args) {
     int n = Integer.parseInt(args[0]);
+    String name = args[1];
 
     HorizontalLine.draw(n);
     System.out.print("\n");
@@ -15,6 +16,8 @@ public class Main {
     IsoscelesTriangle.draw(n);
     System.out.print("\n");
     Diamond.draw(n);
+    System.out.print("\n");
+    DiamondName.draw(n, name);
 
   }
 }

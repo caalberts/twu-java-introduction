@@ -6,22 +6,22 @@ public class Main {
   public static void main(String[] args) {
 
     int n = Integer.parseInt(args[0]);
-//    String name = args[1];
+    String name = args[1];
 
 
-//    HorizontalLine.draw(n);
+    HorizontalLine.draw(n);
 
-//    VerticalLine.draw(n);
+    VerticalLine.draw(n);
 
-//    Triangle.draw(n);
+    Triangle.draw(n);
 
-//    IsoscelesTriangle.draw(n);
+    IsoscelesTriangle.draw(n);
 
-//    Diamond.draw(n);
+    Diamond.draw(n);
 
-//    DiamondName.draw(n, name);
+    DiamondName.draw(n, name);
 
-//    FizzBuzz.count();
+    FizzBuzz.count();
 
     PrimeFactors.generate(n);
   }

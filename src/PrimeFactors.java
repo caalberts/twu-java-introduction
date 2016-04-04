@@ -28,14 +28,14 @@ public class PrimeFactors {
     return newArray;
   }
 
-  private static int[] getUniquePrimeFactors (int[] array) {
+  private static int[] getUniquePrimeFactors (int[] factors) {
     int[] uniquePrimeFactors = {};
-    for (int i = 0; i < array.length; i++) {
+    for (int i = 1; i < factors.length; i++) {
       if (uniquePrimeFactors.length == 0) {
-        uniquePrimeFactors = addElement(uniquePrimeFactors, array[i]);
+        uniquePrimeFactors = addElement(uniquePrimeFactors, factors[i]);
       }
-      else if (array[i] != uniquePrimeFactors[uniquePrimeFactors.length - 1]) {
-        uniquePrimeFactors = addElement(uniquePrimeFactors, array[i]);
+      else if (factors[i] != uniquePrimeFactors[uniquePrimeFactors.length - 1]) {
+        uniquePrimeFactors = addElement(uniquePrimeFactors, factors[i]);
       }
     }
     return uniquePrimeFactors;
